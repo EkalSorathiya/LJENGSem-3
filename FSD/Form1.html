@@ -1,0 +1,68 @@
+<!--to collect details of user such as name ,address,radiobutton 
+to choose subject of book
+he want to buy drop down to choose fav auther by providing categories 
+like novel story books comics and 
+coments for the last book he reads give title to form with outline
+-->
+<html>
+    <body>
+        <fieldset>
+            <legend align="center">Book Store</legend>
+
+            Name: <input type="text" placeholder="Enter Name" >
+            <br><br>
+            Address:
+            <br><textarea  placeholder="Enter Address" cols="30" rows="10"></textarea>
+
+            <br>
+            <br>
+
+            Enter Book Language: 
+            <label> <input type="radio" name="subject" >English</label>
+            <label> <input type="radio" name="subject" >Hindi</label>
+
+            <br><br>
+
+            select Book Name: 
+            <select name="" id="">
+                <option value="novel">----Select Book---</option>
+                <optgroup label="Novel">
+                    <option value="">Jane Eyre</option>
+                    <option value="">Wuthering Heights</option>
+                    <option value="">Middlemarch</option>
+                    <option value="">Ulysses</option>
+                </optgroup>
+                <optgroup label="Story Book">
+                    <option value="">Nineteen Eighty-Four</option>
+                    <option value="">The Great Gatsby</option>
+                    <option value="">To Kill a Mockingbird</option>
+                    <option value="">Jane Eyre</option>
+                </optgroup>
+
+                <optgroup label="Comics">
+                    <option value="">Love and Rockets</option>
+                    <option value="">Marvelman</option>
+                    <option value="">Monstress</option>
+                    <option value="">Calvin and Hobbes</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            Upload Your CV:
+            <input type="file">
+
+            <br>
+            <br>
+            Enter Your Comment:
+            <br>
+            <textarea placeholder="Comment" cols="30" rows="10"></textarea>
+            <br><br>
+            <br>
+            <br>
+            <input type="reset"  >
+            <input type="submit" >
+
+
+        </fieldset>
+    </body>
+</html>
