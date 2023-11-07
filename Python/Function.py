@@ -64,6 +64,44 @@ def d2():
 d2()
 
 
+# In[3]:
+
+
+#wap to find armstrong number using user dfine function
+
+
+def arm(a):
+    temp=a
+    power=len(str(a))
+    s=0
+    while(a>0):
+        d=a%10
+        s=s+(d**power)
+        a=a//10
+
+    if(s==temp):
+        print("armstrong Number")
+    else:
+        print("Not Armstrong Number")
+
+a=int(input("Enter Number:"))
+arm(a)
+
+
+# In[5]:
+
+
+def d(x,y=3,*z):
+    sum=x-y
+    for i in z:
+        sum+=i
+    return sum
+print(d(1,5,7,4,3))
+
+
+
+
+
 # In[ ]:
 
 
