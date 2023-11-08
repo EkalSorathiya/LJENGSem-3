@@ -102,6 +102,86 @@ print(d(1,5,7,4,3))
 
 
 
+# In[37]:
+
+
+days=int(input("Enter Days:"))
+w=days//7
+mon=1
+sun=7
+s=0
+for i in range(w):
+    for j in  range(mon,sun+1):
+        s=s+j
+    mon+=1
+    sun+=1
+for k in range(days%7):
+    s=s+mon
+    mon+=1
+    
+print("Sum is ",s)
+
+
+# In[35]:
+
+
+def f(a,*b,c=6,**d):
+    print(a,b,c,d)
+
+f(1,2,3,c=7,x=4,y=5)
+
+
+# In[69]:
+
+
+def collatz(num):
+    while num>1:
+        print(num,end=" ")
+        if(num%2):
+            num=(3*num)+1
+        else:
+            num=num//2
+    print(1)
+        
+num=int(input("ENter Number"))
+collatz(num)
+
+
+# In[121]:
+
+
+k=1
+for i in range(1,5):
+    for j in range(1,i+1):
+        print(k,end=" ")
+        k=k+1
+    print()
+
+
+# In[183]:
+
+
+for i in range(6):
+    
+    for j in range(i,6):
+        print("",end=" ")
+        
+    for k in range(0,i+1):
+        print("*",end=" ")
+    print()
+
+    
+for i in range(7,0,-1):
+    
+    for j in range(i,7):
+        print("",end=" ")
+        
+    for k in range(0,i):
+        print("*",end=" ")
+    
+    print()
+
+
 # In[ ]:
 
 
