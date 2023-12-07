@@ -1,0 +1,10 @@
+/* body{
+    background-color: red;
+} */
+
+div{
+    background-image: url("horse.jpg");
+    background-repeat: repeat;
+    height: 900px;
+    width: 900px;
+}

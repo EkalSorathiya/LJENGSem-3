@@ -1,0 +1,4 @@
+Accessing char of string:
+	1)Indexing
+	2)Slicing
+		

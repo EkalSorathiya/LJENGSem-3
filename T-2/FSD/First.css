@@ -1,0 +1,36 @@
+h1{
+    font-size: 100px;
+    border:2px solid yellow
+}
+
+p{
+    font-size: 50px;
+    color:rgb(102, 30, 170);
+}
+
+#para1{
+    color:red
+}
+
+#para2{
+    background-color:black ;
+    color:blue
+}
+
+.para3{
+    background-color: rgb(0, 0, 0);
+    color: brown;
+    font-size: 50px;
+    
+}
+.ex{
+    background-color: rgb(39, 161, 161);
+    color: blueviolet;
+}
+
+
+
+*{
+    color:chartreuse;
+    text-align: center;
+}

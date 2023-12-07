@@ -1,0 +1,51 @@
+<!-- to design a signUp form having fields like user nam e pass choice of sport cricket hockey badminton and tennis include gender field suybmit and reset button 
+1)while hovering user name and pass its background should turn yellow and pink color resp.
+2)while clicking sports and gender field text should turn into red color
+4)both submit and reset button text should turn blue while hovering -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text]:hover{
+            background-color: yellow;
+        }
+        input[type=password]:hover{
+            background-color: pink;
+        }
+        input[type=submit]:hover{
+            color: blue;
+        }
+        input[type=reset]:hover{
+            color: blue;
+        }
+        label:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <H1 align="center">Sign-Up</H1>
+        UserName:<input type="text">
+        <br>
+        Password:<input type="password">
+        <br>
+        Choice of Sports:
+        <label><input type="checkbox">Cricket</label>
+        <label><input type="checkbox">Hockey</label>
+        <label><input type="checkbox">Badminton</label>
+        <label><input type="checkbox">Tennis</label>
+        <br>
+        Gender:<label><input type="radio" name="gender">Male</label>
+        <label><input type="radio" name="gender">Female</label>
+        <label></label><input type="radio" name="gender">Other</label>
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
