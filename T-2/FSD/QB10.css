@@ -1,0 +1,4 @@
+h1.red-letter::first-letter {
+    color: red;
+    font-size: 160%;
+}

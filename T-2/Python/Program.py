@@ -86,3 +86,27 @@ for i in s:
         
 print(s1)    
 
+
+# In[ ]:
+
+
+# wap to count special element from list an element is special if removal of that element makes a 
+# list balanced the list will be balanced if  sum of even index element is = the sum of odd index elements 
+
+l=eval(input("Enter List:"))
+count=0
+
+for i in range(len(l)):
+    a=l.copy()
+    a.pop(i)
+    sum1=sum(a[0::2])
+    sum2=sum(a[1::2])
+    if sum1==sum2:
+        count+=1
+        print("Index of element :",i)
+
+if count!=0:
+    print("number of element in list are:",count)
+else:
+    print("No such element in list")
+
