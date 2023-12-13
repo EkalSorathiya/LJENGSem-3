@@ -1,0 +1,70 @@
+<!-- 2 tables having 3 rows and 3 columns of 50% width with horizontally adjustant to each other 
+    they have blue ang green background resp if page turns to potrate mode backcround of tables should be swap-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #table1{  
+                float:left;              
+                background-color: blue;    
+            }
+            #table2{ 
+                float:left;              
+                background-color: red;    
+            }
+
+            @media screen and (orientation:portrait)
+            {    
+                #table1{                
+                background-color: red;    
+                }
+                #table2{                
+                    float:left;
+                    background-color: blue;    
+                }       
+            }
+    
+        </style>
+    </head>
+    <body>
+
+        <table id="table1"  width="50%" height="600" >
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <table id="table2"  width="50%" height="600" >
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+    </html>

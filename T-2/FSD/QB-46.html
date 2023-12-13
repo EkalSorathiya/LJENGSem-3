@@ -1,0 +1,41 @@
+<!-- that add some text to an image in the bottom right corner and top left corner along with the use of opacity image-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+        }
+        .topleft{
+            position: absolute;
+            top:10px;
+            left: 10px;
+        }
+        .topright{
+            position: absolute;
+            top: 440px;
+            left: 300px;
+        }
+        img{
+            opacity: 0.7;
+            height: 460px;
+            width: 410px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topleft">
+            This is left text
+        </div>
+        <div class="topright">
+            This is right text
+        </div>
+        <img src="horse.jpg" alt="">
+    </div>
+    
+</body>
+</html>
