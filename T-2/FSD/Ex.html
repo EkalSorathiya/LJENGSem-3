@@ -1,0 +1,44 @@
+<!-- to design login from having name password submit and reset buttopn while hovering 
+    all controls around 20 hori and vertically with delay of 2 sec expansion take place in 4 s -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+       input:hover{
+            transition: width 4s 2s,height 4s 2s;
+            width: 120%;
+            height: 10%;
+       }
+
+       button:hover{
+        transform: width
+        ;
+       }
+
+    </style>
+    
+</head>
+<body align="center">
+    <h1>login</h1>
+    <form action="">
+        <table align="center" cellpadding="10px">
+            <tr>
+                <td>login</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td><button type="reset">RESET</button></td>
+                <td><button type="submit">SUBMIT</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
