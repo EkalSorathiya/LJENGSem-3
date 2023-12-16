@@ -1,0 +1,47 @@
+<!-- to design one banner using any heading tag that heading should move in counter clock wise and completes its itrration then return back in clock wise on its starting position use blue text color and effect should begin agter 3s of loading page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ex {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 0px;
+                left:200px;
+            }
+            50%{
+                top: 200px;
+                left: 200px;
+            }
+            75%{
+                top: 200px;
+                left: 0px;              
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }        
+        }
+        h2{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            animation-name: ex;
+            color: blue;
+            animation-duration:2s ;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-delay: 3s;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hello</h2>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ex{
+            0%{
+                top: 0px;
+                left: 0px;
+                background-color: red;
+                transform: scale(1,1);
+            }
+            25%{
+                top: 200px;
+                left:200px;
+                background-color: white;
+                transform: scale(2,2);
+
+            }
+            50%{
+                top: 0px;
+                left: 400px;
+                background-color: blue;
+                transform: scale(1,1);
+
+            }
+            75%{
+                top: 200px;
+                left: 600px;
+                background-color: yellow;
+                transform: scale(2,2);
+
+            }
+            100%{
+                top: 0px;
+                left: 800px;
+                background-color: green;
+                transform: scale(1,1);
+
+            }
+        }
+        div{
+            position: relative;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            animation-name: ex;
+            animation-duration:1s ;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div></div><br><br>
+</body>
+</html>
