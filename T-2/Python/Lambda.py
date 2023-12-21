@@ -138,25 +138,116 @@ for i in range(3):
 # In[ ]:
 
 
-# a company has decided to give gifts the employee for that company has given the rank to each emp based on the ranlk company has mads certai rules to distribue the gift each emp must recive atlest 1 gigt emp having higher ranking get > number of gigt then their neighbours what is the min no. of gift req by the company
-emp=int(input("Enter No. of Employee"))
-rl=[]
-gl=[]
-for i in range(emp):
-    er=int(input("Enter Rank"))
-    rl.append(er)
-count=len(rl)
-for i in range(count-1):
-    if rl[i]>rl[i+1]:
-        gl.append(1)
-    elif rl[i]<rl[i+1]:
-        gl.append(2)
-print(rl)
-print(gl)
+
 
 
 # In[ ]:
 
 
 
+
+
+# In[ ]:
+
+
+
+
+
+# In[8]:
+
+
+# a company has decided to give gifts the employee for that company has given the rank to each emp based on the ranlk company has mads certai rules to distribue the gift each emp must recive atlest 1 gigt emp having higher ranking get > number of gigt then their neighbours what is the min no. of gift req by the company
+
+test=int(input("Enter No. of Test Case"))
+
+while test>0:
+    sumgift=0
+    
+    n=int(input("Enter No. of Employee"))
+    a=list(map(int,input().split()))
+    gift=[1]
+    
+    for i in range(1,n):
+        if a[i]>a[i-1]:
+            gift.append(gift[i-1]+1)
+            
+        else:
+            gift.append(1)
+    
+    print(gift)
+    for i in range(n-2,-1,-1):
+        if a[i]>a[i+1]:
+            gift[i]=max(gift[i+1]+1,gift[i])
+    print(gift)
+    for i in gift:
+        sumgift+=i
+    print(sumgift)
+    test=test-1
+        
+
+
+# In[24]:
+
+
+# longest common per fix from the given list of given string if there is no prefix then return -1
+a=['lesson','less','length']
+size=len(a)
+if size==0:
+    print("Nothing")
+if size==1:
+    print(a[0])
+a.sort()
+end=min(len(a[0]),len(a[-1]))
+i=0
+
+pre=""
+while (i<end and a[0][i]==a[-1][i]):
+    
+    i=i+1
+    pre=a[0][0:i]
+    
+if(pre==""):
+    print(-1)
+else:
+    print(pre)
+
+
+# In[23]:
+
+
+# to rotate nXn matrix by 90 deg clockwise write proper code to take input of n from user and then take input of nXn matrix from user print the original matrix and 90 deg colckwise matrix
+# note: you are not allowed extra list or tuple to do the rotation of matrix you need to make changes in that matrix itself to rotate 
+
+
+n=int(input("Enter N"))
+matrix=[]
+
+for i in range(n):
+    a=[]
+    for j in range(n):
+        a.append(int(input("Enter Number")))
+    matrix.append(a)
+
+for i in matrix:
+    for j in i:
+        print(j,end=" ")
+    print()
+    
+for i in range(n):
+    for j in range(i,n):
+        matrix[i][j],matrix[j][i]=matrix[j][i],matrix[i][j]
+
+for i in matrix:
+    for j in i:
+        print(j,end=" ")
+    print()
+    
+    
+for i in matrix:
+    i.reverse()
+        
+for i in matrix:
+    for j in i:
+        print(j,end=" ")
+    print()
 
