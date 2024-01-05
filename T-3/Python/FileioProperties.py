@@ -194,3 +194,17 @@ w.writelines(data[:line-1])
 w.writelines(data[line:])
 w.close()
 
+
+# In[3]:
+
+
+with open("writeline.txt","r") as f:
+    print(f.read())
+print(f.closed)
+
+
+# In[7]:
+
+
+get_ipython().run_cell_magic('writefile', 'abc.txt', 'Hii\nHello\nPython')
+
