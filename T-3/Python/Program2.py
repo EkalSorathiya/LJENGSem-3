@@ -59,8 +59,62 @@ for i,j in enumerate(data1):
         break
 
 
-# In[ ]:
+# In[14]:
 
 
+f=open("Word80.txt","r",encoding='utf-8')
 
+l=[]
+def text_line(a):
+    if len(a)<=80:
+        l.append(a)
+    else:
+        if [79]==" ":
+            l.append(a[:80])
+            text_line(a[80:])
+        elif a[79]!=" ":
+            ind=a.rfind(" ",0,79)
+            l.append(a[:ind+1])
+            text_line(a[ind+1:])
+for i in f:
+    if len(i)<=80:
+        l.append(i)
+    else:
+        text_line(i)
+print(l)
+f.close()
+
+f=open("Read80.txt","w")
+for x in l:
+    if x[-1]==" ":
+        x=x[0:-1]+"\n"
+    else:
+        x=x+"\n"
+    f.write(x)
+f.close()
+
+
+# In[13]:
+
+
+# using a file which consist of multiple stat find all the words from the file that can be made from all the char of given user string 
+
+user=input("Enter String: ")
+d={}
+for i in user:
+    d[i]=d.get(i,0)+1
+    
+f=open("Word80.txt","r")
+for line in f:
+    for j in line.split():
+        e={}
+        for x in j:
+            e[x]=e.get(x,0)+1
+        flag=True
+        
+        for k in d:
+            if k not in e or d[k]>e[k]:
+                flag=False
+        if flag:
+            print(j)
 
