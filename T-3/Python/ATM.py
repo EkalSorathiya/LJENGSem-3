@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[9]:
 
 
 # ATM init menue method for creat pin change pin to check balance widthdraw exit  
@@ -24,14 +24,17 @@ class ATM:
         choice=int(input("Enter Your Choice: "))
         if choice==1:
             pin=input("Enter Your pin: ")
-            createPin(pin)
+            self.createPin(pin)
         elif choice ==2:
-            changePin()
+            self.changePin()
         elif choice==3:
-            checkBalance()
+            self.checkBalance()
         elif choice==4:
             amount=int(input("Enter Amount To Withdraw: "))
-            withdraw(amount)
+            self.withdraw(amount)
+        elif choice==0:
+            print("Thank You For Visit😊")
+            
         
     def createPin(self,pin):
         if len(pin)==4:
@@ -46,7 +49,7 @@ class ATM:
         opin=input("Enter Old Pin: ")
         if opin==self.pin:
             npin=input("Enter New Pin")
-            createPin(npin)
+            self.createPin(npin)
         else:
             print("Incorrect Pin")
             self.menu()
@@ -59,11 +62,10 @@ class ATM:
             print("You Need More Fund To Withdraw")
             self.menu()
         else:
+            self.balance=self.balance-amount
+            print("Your Current Balance is - ",self.balance)
+            self.menu()
             
-
-
-# In[ ]:
-
-
-
+            
+a=ATM()
 
