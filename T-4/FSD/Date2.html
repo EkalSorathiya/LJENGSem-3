@@ -1,0 +1,25 @@
+<!-- Calculate mow many days are left for our bday -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function daydifference(date1,date2){
+            oneday=24*60*60*1000;
+            date1_ms=date1.getTime();
+            date2_ms=date2.getTime();
+            diff_ms=Math.abs(date1_ms-date2_ms);
+            return (Math.round(diff_ms/oneday));
+        }
+        var d1=new Date();
+        d1.setMonth(1);
+        d1.setDate(7);
+        var d2=new Date();
+        document.write("No. od Days left: "+daydifference(d1,d2))
+    </script>
+</head>
+<body>
+</body>
+</html>
