@@ -1,0 +1,25 @@
+<!-- Which sort the  element in desc order using bubble sort algo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        a=[10,15,20,13,17,11,0,3]
+        for(let j=0;j<a.length;j++){
+            for(let i=0;i<a.length;i++){
+                if (a[i]>a[i+1]){
+                    temp=a[i];
+                    a[i]=a[i+1];
+                    a[i+1]=temp;
+                }
+            }
+        }
+        document.write(a)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

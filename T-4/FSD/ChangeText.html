@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p id="p1">lorem</p>
+    <button onclick="exp()">Example</button>
+    <button onclick="dom()">Dom</button>
+    <script>
+        function exp(){
+            document.getElementById('p1').innerHTML="This is Example Text Change";
+        }
+        function dom(){
+            document.getElementById('p1').innerHTML="This is HTML DOM Example";
+        }
+    </script>
+</body>
+</html>
