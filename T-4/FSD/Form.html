@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1">
+        UserName: <input type="text" name="fname" placeholder="First Name"/>
+        <br>
+        <br>
+        LastName: <input type="text" name="lname" placeholder="Last Name"/>
+        <br>
+        <br>
+        Gender <label for=""><input type="radio" name="gender" value="Male">Male</label>
+                <label for=""><input type="radio" name="gender" value="Female">Female</label>
+        <br>
+        <br>
+        Hobby <input type="checkbox" name="ch1" value="Cricket">Cricket
+        <input type="checkbox" name="ch1" value="Hockey">Hockey
+        <input type="checkbox" name="ch1" value="Football">Football
+        
+        <br><br>
+        <input type="submit" onclick="f1()">
+    </form>
+
+    <script>
+        function f1(){
+            fname=document.form1.fname.value;
+            lname=document.form1.lname.value; 
+            radio=document.getElementsByName("gender");
+            for(i=0;i<radio.length;i++){
+                if (radio[i].checked==true){
+                    gender=radio[i].value;
+                }
+            }
+            h1="";
+            hobby=document.getElementsByName("ch1");
+            for(i=0;i<hobby.length;i++){
+                if(hobby[i].checked==true){
+                    h1+=hobby[i].value+"  ";
+                }
+            }
+            document.write("Username -" +fname+"<br>")
+            document.write("Last Name -" +lname+"<br>")
+            document.write("Gender -" +gender+"<br>")
+            document.write("Hobby -" +h1+"  ")
+        }
+    </script>
+</body>
+</html>
