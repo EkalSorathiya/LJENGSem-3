@@ -1,0 +1,26 @@
+<!-- to check which mouse button is clicked(right,middle,left) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(e){
+            val=e.button;
+        
+        switch(val){
+            case 0:alert("Left Click");
+                break;
+            case 1:alert("Middle Click");
+                break;
+            case 2:alert("Right Click");
+                break;
+        }
+        }
+    </script>
+</head>
+<body>
+    <div style="width: 200px;height: 200px; border: 1px solid;" onmousedown="fun(event)"></div>
+</body>
+</html>

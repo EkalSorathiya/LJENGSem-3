@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(id){
+            id.innerHTML="MOUSE MOVED";
+            id.style.backgroundColor="yellow";
+        }
+        function fun1(id){
+            id.innerHTML="MOUSE OUT";
+            id.style.backgroundColor="pink";
+        }
+    </script>
+</head>
+<body>
+    <div style="width: 200px;height: 200px;border: 1px solid;"onmouseover="fun(this)" onmouseout="fun1(this)"></div>
+</body>
+</html>

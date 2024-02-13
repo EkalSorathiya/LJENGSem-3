@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function upper(id){
+            id=document.getElementById("t1");
+            id.value=id.value.toUpperCase();
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="" value="Hello" id="t1" onchange="upper(this)">
+    <input type="text" onblur="this.style.backgroundColor='yellow'" name="" id="">
+    <input type="text" onfocus="this.style.backgroundColor='pink'" name="" id="">
+
+</body>
+</html>
