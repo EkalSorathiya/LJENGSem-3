@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            // pat=/ekal/i;
+            // pat=/ekal/;
+            // pat=/[a-z]/;
+            // pat=/[A-Z]/;
+            // pat=/[0-9]/;
+            // pat=/[^0-9]/;
+            // pat=/[^a-z]/;
+            // pat=/[^A-Z]/;
+            // pat=/[X/Y]/; xor y
+
+            // pat=/^[a-z]/;  starts with
+            // pat=/a*/;   0 or more occurance
+            // pat=/a+/;   1 or more occurance
+            // pat=/a$/;   ends with
+            // pat=/\d/;   find digit
+            // pat=/\D/;   find not-digit
+            // pat=/\w/;   [a-z,A-Z,0-9,_]
+            // pat=/\W/;
+
+            u=document.getElementById("t1").value;
+            if(pat.test(u)){
+                alert("Pattern Matched");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text"  id="t1"/>
+    <input type="button" onclick="fun()" value="CLICK HERE"/>
+</body>
+</html>

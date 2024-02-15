@@ -1,0 +1,30 @@
+<!-- input 4 digit no char no special char -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            path=/^\d{4}$/;
+            u=document.getElementById("t1").value;
+            
+            if (path.test(u)){
+                alert("correct password")
+            }
+            else{
+                alert("Enter Correct Password")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>LOGIN</h2>
+    
+    <input type="text" id="t1">
+    <input type="button" value="Submit" onclick="fun()">
+</body>
+</html>

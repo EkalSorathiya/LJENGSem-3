@@ -1,0 +1,23 @@
+<!-- Email Varification -->   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            path=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            u=document.getElementById("t1").value;
+            if(!path.test(u)){
+                alert("Please Enter Correct Email ID");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="t1">
+    <input type="button" value="Click" onclick="fun()">
+    
+</body>
+</html>

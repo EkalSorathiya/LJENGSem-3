@@ -1,0 +1,31 @@
+<!-- login form using js following validations in password field minimum length of password must be 8 char 
+and it must have some special char  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            pat=/\W/;
+            u=document.getElementById("t1").value;
+
+            if (u.length<8){
+                alert("Password must be of 8 character!!")
+                
+            }
+            if(!pat.test(u)){
+                alert("Password must have atlest 1 special char")
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>LOGIN</h2>
+    <input type="email">
+    <input type="text" id="t1">
+    <input type="button" value="Submit"\] onclick="fun()">
+</body>
+</html>
