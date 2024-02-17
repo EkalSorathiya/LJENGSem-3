@@ -1,0 +1,27 @@
+<!-- to call on button click event take one div with some text with no decoration initially take font size and style ad default parameter and pass bg color and 
+    text color while passing arg to the funstyle sholud change on button click event -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const format=(bgc,tc,fz='50px',fs='italic')=>
+        {
+            d1=document.getElementById("d1");
+            d1.style.backgroundColor=bgc;
+            d1.style.color=tc;
+            d1.style.fontSize=fz;
+            d1.style.fontStyle=fs;
+        }
+</script>
+</head>
+<body>
+    <div id="d1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem nisi perspiciatis modi molestias natus consequatur odio labore est? Voluptates quos vero iste aut quod eaque ea blanditiis voluptate est!
+    </div>
+    <button onclick="format('yellow','red')">Click</button>
+</body>
+</html>
