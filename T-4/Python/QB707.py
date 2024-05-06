@@ -106,8 +106,8 @@ class CallHandler:
                 
                 
 r1=Respondent(1,"Ekal")
-r2=Respondent(2,"Jaynish")
-r3=Respondent(3,"Hetali")
+r2=Respondent(2,"Nandini")
+r3=Respondent(3,"Jaynish")
 
 m1=Manager(4,"Aknsha")
 m2=Manager(5,"Vraj")
